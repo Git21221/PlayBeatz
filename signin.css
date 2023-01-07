@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Noto+Sans:wght@300&display=swap');
+:root {
+    font-family: 'Noto Sans', sans-serif;
+    --left-bar-colour: #000000;
+    --nav-colour: #151515;
+    --body-colour: #1b1b1b;
+    --text-colour: #FFFFFF;
+    --btn-bg-colour: #FFFFFF;
+    --btn-bg-text-colour: #000000;
+    --sq-card-bg-colour: #222222;
+    --sq-card-bg-hover-colour: #2C2C2C;
+    --btn-hover-text-colour: #1db954;
+    --left-hover-text-colour: #1db954;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+#parts1 {
+    overflow: hidden;
+    height: 100vh;
+    width: 70vw;
+    background-color: rgb(255, 255, 255);
+}
+
+#parts2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 30vw;
+    text-align: center;
+    background-image: linear-gradient(253deg, #3ba5b4 0, #44f8ad 100%);
+}
+
+
+.circle1 {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    top: 70%;
+    left: 90%;
+    background-image: linear-gradient(253deg, #5cd2e23d 0, #5af5900e 100%);
+}
+
+.circle2 {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    top: 10%;
+    left: 74%;
+    background-image: linear-gradient(253deg, #5cd2e23d 0, #5af5900e 100%);
+}
+
+.line {
+    color: black;
+}
+
+.line1 {
+    width: 100%;
+    color: rgb(255, 255, 255);
+}
+
+.spotify_logo {
+    position: fixed;
+    display: inline;
+}
+
+#content1 {
+    font-weight: bolder;
+    font-size: 3rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+#content2 {
+    font-size: 20px;
+    font-weight: 200;
+    padding-top: 15px;
+    color: rgb(68, 68, 68);
+    font-family: 'Nunito', sans-serif;
+}
+
+#content3 {
+    margin-top: 15px;
+}
+
+#content4 {
+    margin: 20px 0;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    height: 30px;
+    width: 50px;
+    background-color: var(--btn-bg-colour);
+}
+
+#signSet {
+    display: grid;
+    row-gap: 1rem;
+    width: 100%;
+}
+
+#content5 {
+    width: 100%;
+}
+
+input {
+    padding: 15px;
+    border: 1px solid #1db954;
+    border-radius: 50px;
+    width: 40%;
+    cursor: pointer;
+
+}
+
+button[type="submit"] {
+    letter-spacing: 0.02rem;
+    padding: 15px 0;
+    border-radius: 30px;
+    background-color: #1db954;
+    color: #ffffff;
+    border: none;
+    width: 20%;
+    font-size: 16px;
+    font-family: 'Heebo', sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: #34dd6f;
+}
+
+.login_links {
+    color: rgb(255, 255, 255);
+    display: inline;
+}
+
+.social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.fa-brands {
+    display: inline;
+}
+
+.facebook:hover {
+    background-color: #1877f2;
+    transition: 0.3s ease;
+}
+
+.google:hover {
+    background-color: rgb(223, 77, 59);
+    transition: 0.3s ease;
+}
+
+hr {
+    position: relative;
+    top: -6%;
+    width: 90%;
+    background-color: #c7c7c7;
+    border: none;
+    height: 1px;
+    z-index: 0;
+}
+
+.linkedin:hover {
+    background-color: #0a66c2;
+    transition: 0.3s ease;
+}
+
+.content_signin {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    text-align: center;
+    justify-content: center;
+}
+
+::placeholder {
+    font-weight: bolder;
+    color: #757575;
+}
+
+#item21 {
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: 'Nunito', sans-serif;
+}
+
+#item22 {
+    padding: 15px 20px;
+    font-size: 1.19rem;
+    letter-spacing: 0.02rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+button[type="button"] {
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    border: none;
+    width: 50%;
+    letter-spacing: 0.02rem;
+    font-size: 16px;
+    font-family: 'Heebo', sans-serif;
+}
+
+button[type="button"]:hover {
+    color: #00d696;
+}

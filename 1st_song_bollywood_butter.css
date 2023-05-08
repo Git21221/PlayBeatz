@@ -1,39 +1,30 @@
 :root {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'roboto', sans-serif;
     --left-bar-colour: #000000;
     --nav-colour: #151515;
     --body-colour: #1b1b1b;
-    --body-linear-gradient: linear-gradient(#6a80fdd3, #151515, #151515, #151515);
     --text-colour: #FFFFFF;
     --btn-bg-colour: #FFFFFF;
-    --text-greish-colour: #CACACA;
     --btn-bg-text-colour: #000000;
     --sq-card-bg-colour: #222222;
     --sq-card-bg-hover-colour: #2C2C2C;
-    --sq-card-bg-hover-colour-transparent: #2c2c2c4f;
-    --btn-hover-text-colour: #1db954;
-    --left-hover-text-colour: #1db954;
+    --btn-hover-text-colour: #FF5F1F;
+    --left-hover-text-colour: #ff7139;
+    --grad: linear-gradient(#ac6245bc, #ff3e658f);
 }
 
 .light-theme {
     --left-bar-colour: #ffffff;
-    --nav-colour: #eeffeb;
+    --nav-colour: #ececec;
     --body-colour: #e6e6e6;
-    --body-linear-gradient: linear-gradient(#6a80fdd3, #f1f1f1, #f1f1f1, #f1f1f1, #f1f1f1);
     --text-colour: #000000;
     --btn-bg-colour: #000000;
     --btn-bg-text-colour: #ffffff;
-    --text-greish-colour: #141414;
     --sq-card-bg-colour: #dadada;
-    --sq-card-bg-hover-colour-transparent: #cfcfcf4f;
     --sq-card-bg-hover-colour: #d1d1d1;
-    --btn-hover-text-colour: #1db954;
-    --left-hover-text-colour: #1db954;
-}
-
-span {
-    color: var(--text-colour);
-    font-weight: bold;
+    --btn-hover-text-colour: #Ff073a;
+    --left-hover-text-colour: #Ff073a;
+    --grad: linear-gradient(#a72e46b1, #ac6245bc);
 }
 
 img {
@@ -42,7 +33,9 @@ img {
 
 ::-webkit-scrollbar {
     width: 5px;
-
+}
+span{
+    color: var(--btn-bg-colour);
 }
 
 ::-webkit-scrollbar-track {
@@ -101,7 +94,7 @@ img {
 .container_songs {
     position: relative;
     top: 330px;
-    background: var(--body-linear-gradient);
+    background: var(--grad);
     height: max-content;
 }
 
@@ -117,27 +110,26 @@ img {
     border-radius: 50px;
     height: 60px;
     width: 60px;
-    background-color: #1db954;
+    background-color: var(--btn-hover-text-colour);
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
 }
 
 .button:hover {
-    background-color: #1ecf5c;
-    color: rgb(0, 0, 0);
+    background-color: var(--btn-hover-text-colour);
+    color: var(--btn-bg-text-colour);
     transition: 0.2s ease-in-out;
 }
 
 .love_liked {
-    margin-right: 15px;
-    border-radius: 50px;
-    height: 50px;
-    width: 50px;
     color: var(--text-greish-colour);
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: end;
 }
 
 .custom {
@@ -188,10 +180,8 @@ img {
 
 .play {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: row;
-    margin-bottom: 23px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .fa-play {
@@ -217,7 +207,7 @@ img {
 .ftrBtn {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-bottom: 15px;
 }
 
@@ -261,21 +251,21 @@ img {
     width: 40px;
     background-color: var(--btn-bg-colour);
     border-radius: 50%;
-    color: #000000;
+    color: var(--left-bar-colour);
 }
 
 .play_button_song:hover {
-    color: #1db954;
-    box-shadow: 0 0 2px #1db954,
-        0 0 5px #55f38c,
-        0 0 10px #6dffa0;
+    color: var(--btn-hover-text-colour);
+    box-shadow: 0 0 2px var(--left-hover-text-colour),
+        0 0 5px var(--btn-hover-text-colour),
+        0 0 10px var(--left-hover-text-colour);
 }
 
 .song_img {
     border-radius: 50%;
-    box-shadow: 0 0 2px #1db954,
-        0 0 4px #2de26d,
-        0 0 6px #5ef894;
+    box-shadow: 0 0 2px var(--left-hover-text-colour),
+        0 0 4px var(--left-hover-text-colour),
+        0 0 6px var(--left-hover-text-colour);
 }
 
 #songPic {

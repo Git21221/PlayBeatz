@@ -219,7 +219,7 @@ a{
 }
 
 .body_songs {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(5, 1fr);
     /* overflow-x: scroll; */
     /* overflow-y: scroll; */

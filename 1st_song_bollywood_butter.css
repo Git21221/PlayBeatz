@@ -34,9 +34,6 @@ img {
 ::-webkit-scrollbar {
     width: 5px;
 }
-span{
-    color: var(--btn-bg-colour);
-}
 
 ::-webkit-scrollbar-track {
     background: var(--left-bar-colour);
@@ -44,7 +41,7 @@ span{
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #1db954;
+    background-color: var(--btn-hover-text-colour);
     border-radius: 20px;
 }
 
@@ -331,7 +328,7 @@ span{
     left: -3px;
     height: 16px;
     width: 16px;
-    box-shadow: inset 0 0 5px #56fa8f;
+    box-shadow: inset 0 0 5px var(--btn-hover-text-colour);
 }
 
 #progBar {
@@ -402,4 +399,10 @@ span{
 }
 #ftrSongDisplayName{
     font-weight: 300;
+}
+.changenothover{
+    color: var(--btn-bg-colour);
+}
+#timeStart, #timeEnd, #ftrSongDisplayName{
+    color: var(--btn-bg-colour);
 }

@@ -76,12 +76,12 @@ body {
     grid-row-end: 4;
     z-index: 3;
 }
-.container{
+.container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.left-nav-3{
+.left-nav-3 {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -89,7 +89,7 @@ body {
     padding: 15px 30px;
 }
 
-.logoText{
+.logoText {
     display: flex;
     column-gap: 15px;
     text-decoration: none;
@@ -126,11 +126,10 @@ body {
 .playbeat-logo{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 20px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 .pb-logo{
@@ -140,40 +139,16 @@ a{
 
 .logoText:hover {
     color: var(--left-hover-text-colour);
-    transition: 0.3s ease-in;
 }
 
 .fa-sun, .fa-moon {
     margin: 0;
     position: relative;
     color: var(--btn-bg-text-colour);
+    left: -1px;
 }
 .fa-sun{
-    left: 2px;
-}
-.fa-moon {
-    right: 2px;
-}
-
-.fa-solid{
-    transition: 0.14s ease-in;
-    color: var(--left-hover-text-colour);
-}
-
-.fa-regular {
-    color: var(--text-colour);
-    transition: 0.14s ease-in;
-
-}
-
-.fa-solid:hover {
-    color: var(--left-hover-text-colour);
-    transition: 0.14s ease-in;
-}
-
-.fa-solid:hover {
-    color: var(--left-hover-text-colour);
-    transition: 0.14s ease-in;
+    left: 1px;
 }
 
 
@@ -221,8 +196,6 @@ a{
 .body_songs {
     display: flex;
     grid-template-columns: repeat(5, 1fr);
-    /* overflow-x: scroll; */
-    /* overflow-y: scroll; */
     position: relative;
     scroll-behavior: smooth;
     cursor: pointer;
@@ -242,11 +215,10 @@ a{
     width: 200px;
     background: var(--sq-card-bg-colour);
     color: var(--text-colour);
+    transition: 0.3s linear;
 }
 
 .sq_card_song:hover {
-    transition-timing-function: step-end;
-    transition: 0.5s;
     background: var(--sq-card-bg-hover-colour);
 }
 
@@ -267,6 +239,7 @@ a{
     top: 16px;
     left: 16px;
     width: 84%;
+    object-fit: cover;
 }
 
 .text_under_song_bold {
@@ -279,10 +252,10 @@ a{
 }
 
 .text_under_song {
-    display: -webkit-box;
-    white-space: normal;
+    white-space: nowrap;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
+    /* line-clamp: 1; */
     width: 170px;
     height: 40px;
     overflow: hidden;

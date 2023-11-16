@@ -19,8 +19,8 @@
     --btn-bg-text-colour: #000000;
     --sq-card-bg-colour: #222222;
     --sq-card-bg-hover-colour: #2C2C2C;
-    --btn-hover-text-colour: #1db954;
-    --left-hover-text-colour: #1db954;
+    --btn-hover-text-colour: #ff5f1f;
+    --left-hover-text-colour: #ff7139;
 }
 
 * {
@@ -38,7 +38,7 @@
     overflow: hidden;
     height: 100vh;
     width: 30vw;
-    background-image: linear-gradient(253deg, #3ba5b4 0, #44f8ad 100%);
+    background-image: linear-gradient(253deg, #ff954e 0, #f8aa44 100%);
 }
 
 #parts2 {
@@ -59,7 +59,7 @@
     border-radius: 50%;
     top: 70%;
     left: 90%;
-    background-image: linear-gradient(253deg, #5cd2e23d 0, #5af5900e 100%);
+    background-image: linear-gradient(253deg, #e2775c3d 0, #17ff680e 100%);
 }
 
 .circle2 {
@@ -117,17 +117,18 @@
 button[type="button"] {
     padding: 15px 0;
     border-radius: 30px;
-    background-color: #ffffff;
+    background-color: var(--btn-bg-colour);
     border: none;
     width: 60%;
     letter-spacing: 0.02rem;
     font-size: 16px;
     font-family: 'Heebo', sans-serif;
+    transition: 0.3s linear;
 }
 
 button[type="button"]:hover {
-    color: #00d696;
-    transition: 0.2s linear;
+    color: var(--left-hover-text-colour);
+    cursor: pointer;
 }
 
 .content4 {
@@ -217,7 +218,7 @@ input[type="email"],
 input[type="password"] {
     padding: 15px;
     margin: 13px 0;
-    border: 1px solid #1db954;
+    border: 1px solid var(--btn-hover-text-colour);
     border-radius: 50px;
     width: 80%;
     cursor: pointer;
@@ -237,14 +238,14 @@ input[type="checkbox"] {
 }
 
 .terms {
-    color: #20ce9a;
+    color: var(--left-hover-text-colour);
 }
 
 button[type="submit"] {
     padding: 15px 0;
     border-radius: 30px;
     margin-top: 15px;
-    background-color: #3ff0bb;
+    background-color: var(--left-hover-text-colour);
     border: none;
     width: 40%;
     letter-spacing: 0.02rem;

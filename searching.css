@@ -8,10 +8,10 @@
     --btn-bg-text-colour: #000000;
     --sq-card-bg-colour: #222222;
     --sq-card-bg-hover-colour: #2C2C2C;
-    --btn-hover-text-colour: #1db954;
-    --left-hover-text-colour: #1db954;
-    --search-bar-shadow: #26da65;
-    --search-bar-shadow1: #49f384;
+    --btn-hover-text-colour: #ff5f1f;
+    --left-hover-text-colour: #ff3971;
+    --search-bar-shadow: rgb(255, 109, 41);
+    --search-bar-shadow1: rgb(255, 108, 40);
     --song-hover: #6d6d6d;
 }
 .designForSearching {
@@ -20,14 +20,12 @@
     grid-template-columns: 13fr 2fr 2fr;
 }
 .search{
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 .darkTheme{
     width: 100%;
-    direction: rtl;
 }
 .signinBtnContainer{
     width: 100%;
@@ -48,14 +46,17 @@ box-shadow: 0 0 2px var(--left-hover-text-colour),
 ::placeholder{
     font-weight: bolder;
 }
+
 table{
     border-collapse: collapse;
     margin-left: 8vw;
     width: 56%;
 }
+
 table tr{
     padding: 0;
 }
+
 table td{
     padding: 10px;
     word-wrap:break-word;

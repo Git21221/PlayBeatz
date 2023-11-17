@@ -17,8 +17,8 @@
 
 .light-theme {
     --left-bar-colour: #ffffff;
-    --nav-colour: #ececec;
-    --body-colour: #e6e6e6;
+    --nav-colour: #f1f1f1;
+    --body-colour: #f7f7f7;
     --text-colour: #000000;
     --btn-bg-colour: #000000;
     --btn-bg-text-colour: #ffffff;
@@ -59,22 +59,25 @@ body {
     width: 100vw;
     grid-template-columns: 0.1fr 1fr 1fr;
     grid-template-rows: 0fr 4fr 1fr;
+    background-color: var(--nav-colour);
 }
 
 #item1 {
     height: 60px;
     color: var(--text-colour);
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column-end: 4;
     z-index: 2;
+    padding: 10px 20px;
 }
 
 #item2 {
     color: var(--text-colour);
     background: var(--left-bar-colour);
-    grid-row-start: 1;
+    grid-row-start: 2;
     grid-row-end: 4;
     z-index: 3;
+    width: max-content;
 }
 .container {
     display: flex;
@@ -148,7 +151,7 @@ a {
     left: -1px;
 }
 .fa-sun{
-    left: 1px;
+    left: -1px;
 }
 
 
@@ -160,14 +163,17 @@ a {
 
 .top-bar-hori {
     display: flex;
-    flex-direction: row-reverse;
     direction: ltr;
     height: 60px;
     align-items: center;
-    justify-content: right;
-    justify-items: center;
+    justify-content: space-between;
     background: var(--nav-colour);
     /* box-shadow: 0px 0px 16px 0; */
+}
+.rightpart{
+    display: flex;
+    align-items: center;
+    direction: rtl;
 }
 
 .signup_login {
